@@ -83,13 +83,28 @@
 
 <div id="modalBackdrop" class="modal-backdrop" onclick="modalBackdropClick(event)"><div id="modalBox" class="modal"></div></div>
 
+
+
+
+
+
+
 <script>
 // ==============================
 // ตั้งค่าระบบ (แก้ตรงนี้ 2 ค่า)
 // ==============================
-const SUPABASE_URL = 'YOUR_SUPABASE_URL';
-const SUPABASE_ANON_KEY = 'YOUR_SUPABASE_ANON_KEY';
+const SUPABASE_URL = 'https://fgpuhmqcpmtugyczulop.supabase.co';
+const SUPABASE_ANON_KEY ='sb_publishable_4gpKvuaXsD82NpG4j6cv8A_MQlkS31U';
 const SCHOOL_LOGO_URL = 'school-logo.png';
+
+
+
+
+
+
+
+
+
 
 const hasSupabaseConfig = !SUPABASE_URL.includes('YOUR_') && !SUPABASE_ANON_KEY.includes('YOUR_');
 const sb = hasSupabaseConfig ? window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY) : null;
@@ -168,4 +183,3 @@ init();
 </script>
 </body>
 </html>
-
